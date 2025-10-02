@@ -15,3 +15,6 @@ def login_view(request):
             messages.error(request, "Usuario o contraseña incorrectos")
 
     return render(request, "appOne/login.html")
+
+def home(request):
+    return render(request, "appOne/home.html")
